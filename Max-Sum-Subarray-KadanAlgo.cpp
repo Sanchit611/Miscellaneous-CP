@@ -16,6 +16,15 @@ public:
             if(cur_sum<0)
                 cur_sum=0;
         }
+//           Kadanes for array with negative elements
+//          for(int i=0;i<n;i++){
+//             cur_sum+=nums[i];
+//             if(cur_sum>max_sum){
+//                 max_sum=cur_sum;  
+//             }
+//             if(cur_sum<nums[i])
+//                 cur_sum=nums[i];
+//         }
         return max_sum;
     }
 };
