@@ -38,7 +38,8 @@ int32_t main()
     int p[n+1];
     memset(p,0,sizeof(p));
 
-    for(int i=1;i<=n;i++){
+    for(int i=2;i<=n;i++){
+       // if(p[i]!=0) continue;   This generates sum of prime divisors of that number
         for(int j=i;j<=n;j+=i){
             p[j]+=i;
         }
